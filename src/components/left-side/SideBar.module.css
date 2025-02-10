@@ -4,8 +4,9 @@
   background-color: #f8fafa;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  transition: width 0.3s ease;
+  justify-content: space-between;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .sidebar-header {
@@ -39,10 +40,23 @@
 /* Menu Styling */
 .navigation {
   display: flex;
-  gap: 1rem;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%; /* Ensure it takes full height */
+  justify-content: space-between; /* Distributes items: top, middle, bottom */
+  gap: 1rem; 
   flex: 1;
+}
+
+.navigation ul:first-child {
+  /* This ensures the first (menuItems) stays at the top */
+}
+
+.navigation ul:nth-child(2) {
+  flex-grow: 1; /* Pushes this section to the middle */
+}
+
+.navigation ul:last-child {
+  margin-top: 15rem; 
 }
 
 .navigation ul {
@@ -56,7 +70,7 @@
 }
 
 .navigation ul span{
- font-size: 1.8rem;
+ font-size: 1.5rem;
  font-weight: 500;
  font-family: 'Schibsted Grotesk', Arial, sans-serif;
 }
@@ -75,21 +89,37 @@
   box-sizing: border-box;
 }
 
-
 .navigation ul a {
   text-decoration: none !important; 
   color: inherit;
 }
 
 .side-bar-icon {
-  margin-right: 15px;
-  font-size: 18px;
+  margin-right: 1.5rem;
+  font-size: 1.4rem;
 }
 
-.active {
+.navigation_item:hover {
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  padding: 1rem;
+}
+
+.navigation_item.active {
   background-color: #ffffff;
   font-weight: bold;
   color: #333;
-  padding: 12px 12px;
+  padding: 1rem ;
   text-decoration: none;
+  width: 70%;
+}
+
+.sales{
+  margin-top: 5rem;
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #8A8E97;
+  padding: .8rem 1.6rem;
 }

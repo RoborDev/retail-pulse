@@ -1,0 +1,90 @@
+.searchBar{
+  padding: 1rem 1.6rem;
+  width: 45.5rem;
+  max-width: 65.5rem;
+  border-radius: 1.2rem;
+  border: 1.5px solid #f4f4f4;
+  padding-left: 4rem; 
+  font-size: 1.5rem;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; 
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.8rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  height: 70px;
+  width: 100%;
+  border-top-left-radius: 2.8rem;
+  box-sizing: border-box; 
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Left Section Styling */
+.leftSection {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  flex-direction: column;
+  line-height: 23.87px;
+  gap: .4rem;
+  width: 300px;
+}
+
+.rightSection{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.iconContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.name{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.notificationIcon{
+  border: 1.5px solid #f4f4f4;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  position: relative;
+}
+
+.navbarIcon{
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: .5rem;
+}
+
+.name{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: .7rem;
+}

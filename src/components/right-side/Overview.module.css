@@ -1,0 +1,27 @@
+.overview{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.5rem 2rem;
+}
+
+.overviewButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+h2{
+  font-size: 3.2rem;
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
+}
+
+.blue{
+  background-color: #009FFF;
+  color: #fff;
+}
+
+.white{
+  background-color: #fff;
+}

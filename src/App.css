@@ -6,7 +6,8 @@
 
 body, html {
   height: 100%;
-  width: 100%;
+  width: 100%;  
+  background-color: #f8fafa;
 }
 
 .container {
@@ -21,5 +22,9 @@ body, html {
 
 .mainbody {
   background-color: #fff;
-  height: 100%;  
+  height: 100%; 
+  border: 1.5px solid #f4f4f4;
+  border-radius: 2.4rem;
+  margin-top: .8rem; 
+  margin-right: .7rem;
 }

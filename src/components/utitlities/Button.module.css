@@ -1,0 +1,15 @@
+.button{
+  display: flex;
+  align-items: center;
+  padding: .2rem 1.4rem;
+  border-radius: 1rem;
+  border: 2px solid #f4f4f4;
+  font-size: 1.4rem;
+  gap: 8px; 
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px; /* Adjust size */
+  height: 20px;
+}
