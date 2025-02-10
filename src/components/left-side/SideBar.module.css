@@ -1,0 +1,95 @@
+.brand {
+  width: 312px;
+  height: 100%;
+  background-color: #f8fafa;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: width 0.3s ease;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem .8rem;
+  position: relative;
+  bottom: 20%;
+}
+
+.logo-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .8rem;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  color: #333;
+}
+
+/* Menu Styling */
+.navigation {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  font-size: 1.8rem;
+  flex-direction: column;
+  gap: .8rem; 
+}
+
+.navigation ul span{
+ font-size: 1.8rem;
+ font-weight: 500;
+ font-family: 'Schibsted Grotesk', Arial, sans-serif;
+}
+
+.navigation_item{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.2rem 1.6rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+
+.navigation ul a {
+  text-decoration: none !important; 
+  color: inherit;
+}
+
+.side-bar-icon {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.active {
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #333;
+  padding: 12px 12px;
+  text-decoration: none;
+}
