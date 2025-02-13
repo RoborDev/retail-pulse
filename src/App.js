@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { Fragment } from "react";
+import React from "react";
 import SideBar from "./components/left-side/SideBar";
 import MainBody from "./components/right-side/MainBody";
 

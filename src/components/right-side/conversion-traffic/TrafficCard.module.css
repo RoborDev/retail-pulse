@@ -1,0 +1,128 @@
+.salesCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1.5px solid #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h3 {
+  color: #4a4a4a;
+}
+
+.headerText{
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+  .compareBtn {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #f4f4f4;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    gap: .7rem;
+  }
+  
+.compareButton:hover {
+  background: #f5f5f5;
+}
+
+.salesAmount {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.direct {
+  background: #3b82f6;
+  left: 0;
+}
+
+.paid {
+  background: #facc15;
+  left: 58%;
+}
+
+.social {
+  background: #22c55e;
+  left: 83%;
+}
+
+.salesDetails {
+  margin-top: 16px;
+}
+
+.salesItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4a4a4a;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.label {
+  display: flex;
+  align-items: center; 
+}
+.label p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.directDot {
+  background: #009FFF;
+}
+
+.paidDot {
+  background: #FFB54D;
+}
+
+.socialDot {
+  background:#6BC796;
+}
+
+.amount {
+  font-weight: 600;
+  font-size: 1.4rem;
+}

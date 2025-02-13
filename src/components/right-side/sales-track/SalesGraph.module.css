@@ -1,0 +1,8 @@
+.canvas {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 2rem;
+}

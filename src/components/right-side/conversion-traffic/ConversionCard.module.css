@@ -1,0 +1,145 @@
+.conversionCard {
+  background: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: 1.5px solid #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
+}
+
+/* Header Section */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  color: #6b7280;
+}
+
+.conversionRate {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Compare Button */
+.compareBtn {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #f4f4f4;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  gap: .7rem;
+}
+
+/* Conversion Funnel */
+.funnelTitle {
+  font-size: 1.4rem;
+  color: #6b7280;
+  margin: .7rem 0;
+}
+
+/* Container */
+.funnelContainer {
+  background: white;
+  border-radius: 1.5rem;
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
+  padding: .5rem;
+}
+
+/* Row wrapper */
+.testingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f5f7;
+  border-radius: 0.8rem;
+  width: 100%;
+  margin: .7rem 0;
+}
+
+.testingRow:last-child{
+  margin: 0;
+}
+
+/* Funnel Stage (Left Side) */
+.funnelStageContainer {
+  background: #f3f5f7;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden; 
+  white-space: nowrap;    
+}
+
+.funnelStage {
+  font-size: 1.4rem;
+  color: #32343D;
+  white-space: nowrap;    
+  overflow: hidden;       
+  text-overflow: ellipsis;
+  max-width: 100%;        
+  display: block;    
+}
+
+.funnelCon{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  }
+
+/* Progress Bar (Middle) */
+.progressBar {
+  flex: 2;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  direction: rtl;
+}
+
+.progressFill {
+  background: linear-gradient( #6BC796, #46BB80);
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  justify-content: center;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: width 0.5s ease-in-out;
+  border-radius: 0.5rem;
+  float: right;
+}
+
+/* Percentage (Right Side) */
+.percentageContainer {
+  position: relative;
+  top: 2rem;
+  left: 1.5rem;
+  right: 1rem;
+}
+
+.percentage {
+  font-size: 1.4rem;
+  color: #374151;
+  padding-right: .7rem;
+}

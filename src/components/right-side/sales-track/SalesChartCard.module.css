@@ -1,0 +1,138 @@
+.salesChartCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  border: 2px solid #f4f4f4;
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
+  width: 94%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.header h2{
+  color: #70747E;
+  font-size: 1.6rem;
+}
+
+.salesFigure {
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.filterButtons button {
+  background:#fff;
+  border: 1.5px solid #f4f4f4;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filterButtons span{
+  color: 
+  #727988;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.label p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  border: 1.5px solid #f4f4f4;
+  border-radius: .8rem;
+}
+
+.testing{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.testingP{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.period > div:first-child {
+  flex-grow: 1; 
+}
+
+.dates {
+  display: flex;
+  gap: 1rem; 
+  justify-content: flex-end; 
+}
+
+
+.size{
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 2rem;
+  color: #70747E;
+}
+
+.filterButtons button:hover {
+  background: #e0e0e0;
+}
+
+.chartContainer {
+  width: 100%;
+  height: 250px;
+}
+
+
+
+.period {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .5rem;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.title {
+  font-size: 14px;
+  color: #6c757d; /* Gray text */
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: #f8f9fa;
+  padding: 4px 12px;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #e0e0e0; /* Subtle border */
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.blueDot {
+  background: #009FFF;
+}
+
+.orangeDot {
+  background: #FFB54D;
+}

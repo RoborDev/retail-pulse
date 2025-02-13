@@ -1,0 +1,84 @@
+.salesCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.2rem;
+  padding: 1rem 1.5rem;
+}
+
+.salesCard {
+  padding: 0.7rem;
+  border-radius: 15px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
+  justify-content: space-between;
+  flex-grow: 1; /* Allows cards to expand */
+  min-width:15rem;
+  max-width: 100%; /* Prevents overflow */
+  gap: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1.5px solid #e5e7eb;
+}
+
+/* Header Section */
+.salesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconContainer {
+  width:3.5rem;
+  height:3.5rem;
+  background: #f6f7f8;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Growth Percentage */
+.growth {
+  display: flex;
+  align-items: center;
+  color: green;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 11.5rem;
+}
+
+.growthText {
+  margin-left: 3px;
+}
+
+/* Sales Info */
+.salesTitle {
+  font-size: 16px;
+  color: #70747E;
+  font-weight: 500;
+  margin: 0;
+}
+
+.red {
+  color: #dc2626; /* Bright red color */
+}
+
+.salesAmount {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Graph Background */
+.graphBg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background-size: contain;
+  
+}
