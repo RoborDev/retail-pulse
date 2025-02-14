@@ -91,11 +91,11 @@
 .funnelStage {
   font-size: 1.4rem;
   color: #32343D;
-  white-space: nowrap;    
+  white-space: nowrap;         
   overflow: hidden;       
   text-overflow: ellipsis;
   max-width: 100%;        
-  display: block;    
+   
 }
 
 .funnelCon{

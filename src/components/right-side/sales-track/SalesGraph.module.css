@@ -6,3 +6,33 @@
   padding: 10px;
   margin-right: 2rem;
 }
+
+
+/* SalesGraph.module.css */
+
+/* .canvas {
+  width: 600px; 
+  height: 280px; 
+  background-color: white; 
+  border: 1px solid #ddd; 
+} */
+
+.grid-line {
+  stroke: #ddd; /* Grid line color */
+}
+
+.text-label {
+  fill: #6c757d; /* Label color */
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.blue-line {
+  stroke: #007bff; /* Blue line color */
+  stroke-width: 3px;
+}
+
+.orange-line {
+  stroke: #f4a261; /* Orange line color */
+  stroke-width: 3px;
+}

@@ -38,7 +38,6 @@ const SalesChartCard = () => {
           </div>
         </div>
       </div>
-
       <SalesGraph />
     </div>
   );

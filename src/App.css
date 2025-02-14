@@ -22,9 +22,18 @@ body, html {
 
 .mainbody {
   background-color: #fff;
-  height: 100%; 
+  overflow: auto; /* Enables scrolling */
   border: 1.5px solid #f4f4f4;
   border-radius: 2.4rem;
-  margin-top: .8rem; 
-  margin-right: .7rem;
+  margin-top: 0.8rem;
+  margin-right: 0.7rem;
+  
+  /* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+/* Hide scrollbar in WebKit browsers */
+.mainbody::-webkit-scrollbar {
+  display: none;
 }

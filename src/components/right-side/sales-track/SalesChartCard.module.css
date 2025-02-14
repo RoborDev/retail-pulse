@@ -1,6 +1,6 @@
 .salesChartCard {
   background: white;
-  border-radius: 12px;
+  border-radius: 1.2rem;
   padding: 1rem;
   display: flex;
   margin: 1rem;
@@ -25,7 +25,7 @@
 .salesFigure {
   font-size: 4rem;
   font-weight: 500;
-  margin: 0.5rem 0;
+  margin-top: -0.2rem;
 }
 
 .filterButtons {
@@ -43,8 +43,7 @@
 }
 
 .filterButtons span{
-  color: 
-  #727988;
+  color: #727988;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -67,7 +66,6 @@
   flex-direction: column;
 }
 
-
 .period > div:first-child {
   flex-grow: 1; 
 }
@@ -77,7 +75,6 @@
   gap: 1rem; 
   justify-content: flex-end; 
 }
-
 
 .size{
   font-size: 1.2rem;
@@ -95,19 +92,17 @@
   height: 250px;
 }
 
-
-
 .period {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: .5rem;
+  margin-top: -.5rem;
   width: 100%;
   padding: 8px 0;
 }
 
 .title {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #6c757d; /* Gray text */
 }
 
@@ -116,9 +111,9 @@
   align-items: center;
   gap: 3px;
   background: #f8f9fa;
-  padding: 4px 12px;
+  padding: .4rem 1.2rem;
   border-radius: 8px; /* Rounded corners */
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #000;
   border: 1px solid #e0e0e0; /* Subtle border */
 }

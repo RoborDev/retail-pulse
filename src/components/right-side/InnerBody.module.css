@@ -1,25 +1,8 @@
 .innerBody {
   display: grid;
   grid-template-columns: 71% 29%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevents the entire page from scrolling */
+   
 }
-
-.rate {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh; 
-  overflow-y: auto; /* Allows scrolling */
-  scrollbar-width: none; /* Hides scrollbar in Firefox */
-  -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
-}
-
-/* Hides scrollbar in WebKit-based browsers (Chrome, Safari) */
-.rate::-webkit-scrollbar {
-  display: none;
-}
-
 
 .conversionTrafficWrapper {
   display: flex;
@@ -27,6 +10,20 @@
   flex-shrink: 0; /* Prevent shrinking */
 }
 
+.rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; 
+  
+}
+
+/* Hide scrollbar in Chrome, Safari, and Edge */
+.rate::-webkit-scrollbar {
+  display: none;
+}
+
 .topSellingScroll {
   flex-shrink: 0; /* Ensures it does not shrink */
+  margin-bottom: 2rem;
 }

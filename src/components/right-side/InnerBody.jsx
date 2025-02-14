@@ -5,6 +5,7 @@ import ConversionCard from "./conversion-traffic/ConversionCard";
 import TrafficCard from "./conversion-traffic/TrafficCard";
 import TopSellingCard from "./conversion-traffic/TopSellingCard";
 import SalesChartCard from "./sales-track/SalesChartCard";
+import RecentOrders from "./sales-track/RecentOrders";
 
 function InnerBody() {
   return (
@@ -12,6 +13,7 @@ function InnerBody() {
       <div className="track">
         <SalesCard />
         <SalesChartCard />
+        <RecentOrders />
       </div>
       <div className={styles.rate}>
         <div className={styles.conversionTrafficWrapper}>
