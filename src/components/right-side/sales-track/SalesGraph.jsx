@@ -9,8 +9,8 @@ const SalesGraph = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    canvas.width = 610;
-    canvas.height = 240;
+    canvas.width = 608;
+    canvas.height = 223;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -67,7 +67,7 @@ const SalesGraph = () => {
 
     // Labels
     ctx.fillStyle = "#6c757d";
-    ctx.font = "14px 'Schibsted Grotesk'";
+    ctx.font = "15px 'Schibsted Grotesk'";
     const labels = [
       "12:00 am",
       "3:00 am",

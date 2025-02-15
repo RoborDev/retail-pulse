@@ -68,12 +68,14 @@ const RecentOrders = () => {
       <table className={styles.table}>
         <thead className={styles.tableHead}>
           <tr className={styles.tableRow}>
-            <th>#</th>
-            <th>Order ID</th>
-            <th>Customer Name</th>
-            <th>Date</th>
-            <th>Status</th>
-            <th>Amount</th>
+            <th className={`${styles.customerHead} ${styles.hash}`}>#</th>
+            <th className={styles.customerHead}>Order ID</th>
+            <th className={styles.customerHead}>Customer Name</th>
+            <th className={styles.customerHead}>Date</th>
+            <th className={styles.customerHead}>Status</th>
+            <th className={`${styles.customerHead} ${styles.amountBd}`}>
+              Amount
+            </th>
           </tr>
         </thead>
         <tbody>

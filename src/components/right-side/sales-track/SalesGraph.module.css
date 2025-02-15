@@ -5,17 +5,11 @@
   border-radius: 8px;
   padding: 10px;
   margin-right: 2rem;
+  padding-bottom: .5rem;
 }
 
 
 /* SalesGraph.module.css */
-
-/* .canvas {
-  width: 600px; 
-  height: 280px; 
-  background-color: white; 
-  border: 1px solid #ddd; 
-} */
 
 .grid-line {
   stroke: #ddd; /* Grid line color */
@@ -24,7 +18,7 @@
 .text-label {
   fill: #6c757d; /* Label color */
   font-size: 12px;
-  font-family: Arial, sans-serif;
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
 }
 
 .blue-line {

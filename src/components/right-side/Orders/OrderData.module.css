@@ -1,0 +1,34 @@
+.paid {
+  background: #E4FEF3;
+  color: #11523A;
+}
+
+.unpaid {
+  background: #F2F2F3;
+  color: #434750;
+}
+
+.shipped {
+  background: #ECF6FC;
+  color: #0E4C71;
+}
+
+.onHold {
+  background: #FEF2E6;
+  color: #4C3015;
+}
+
+.delivered{
+  background: #E4FEF3;
+  color: #11523A;
+}
+
+.cancelled{
+  background: #E4FEF3;
+  color: #530A1F;
+}
+
+.refunded{
+  background: #FCECF2;
+  color: #530A1F;
+}
