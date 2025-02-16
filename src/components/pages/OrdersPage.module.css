@@ -6,3 +6,25 @@
 .white{
   background-color: #fff;
 }
+
+.container {
+  display: flex;
+  width: 100%;
+  transition: grid-template-columns 0.3s ease-in-out;
+}
+
+.leftSection {
+  flex: 1; /* Takes 100% when no order is selected */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.rightSection {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  transition: width 0.3s ease-in-out;
+}

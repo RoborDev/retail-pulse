@@ -5,7 +5,7 @@ import Button from "../../utitlities/Button";
 import filter from "../../icons/filter.svg";
 import OrdersList from "./OrdersList";
 
-const OrdersTable = () => {
+const OrdersTable = ({ onOrderClick }) => {
   const [activeTab, setActiveTab] = useState("All Orders");
   const tabs = ["All Orders", "Fulfilled", "Unpaid", "Cancelled"];
 
@@ -49,8 +49,7 @@ const OrdersTable = () => {
           </tr>
         </thead>
         <tbody>
-          {" "}
-          <OrdersList orders={orders} />{" "}
+          <OrdersList orders={orders} onOrderClick={onOrderClick} />
         </tbody>
       </table>
     </div>

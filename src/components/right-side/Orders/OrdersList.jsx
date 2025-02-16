@@ -1,11 +1,15 @@
 import React from "react";
 import styles from "./OrderList.module.css";
 
-const OrdersList = ({ orders }) => {
+const OrdersList = ({ orders, onOrderClick }) => {
   return (
     <>
-      {orders.map((order, index) => (
-        <tr key={index}>
+      {orders.map((order) => (
+        <tr
+          key={order.id}
+          className={styles.orderRow}
+          onClick={() => onOrderClick(order)}
+        >
           <td>
             <input type="checkbox" />
           </td>

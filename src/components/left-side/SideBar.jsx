@@ -24,19 +24,19 @@ function SideBar() {
   const menuItems = [
     { img: compass, menuName: "Overview", route: "/" },
     { img: cart, menuName: "Orders", route: "/orders" },
-    { img: tag, menuName: "Products", route: "/products" },
-    { img: user, menuName: "Customers", route: "/customers" },
-    { img: analytics, menuName: "Analytics", route: "/analytics" },
+    { img: tag, menuName: "Products" },
+    { img: user, menuName: "Customers" },
+    { img: analytics, menuName: "Analytics" },
   ];
 
   const sales = [
-    { img: store, menuName: "Online Store", route: "/online-store" },
-    { img: sale, menuName: "Point of Sale", route: "/point-of-sale" },
+    { img: store, menuName: "Online Store" },
+    { img: sale, menuName: "Point of Sale" },
   ];
 
   const settingsMenu = [
-    { img: settings, menuName: "Settings", route: "/settings" },
-    { img: logout, menuName: "Log Out", route: "/logout" },
+    { img: settings, menuName: "Settings" },
+    { img: logout, menuName: "Log Out" },
   ];
 
   return (

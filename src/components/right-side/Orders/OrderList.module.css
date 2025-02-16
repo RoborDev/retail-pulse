@@ -15,3 +15,11 @@
   font-size: 1.6rem;
   font-weight: 500; 
 }
+
+.orderRow {
+  cursor: pointer;
+}
+
+.orderRow:hover {
+  background-color: #f5f5f5;
+}
