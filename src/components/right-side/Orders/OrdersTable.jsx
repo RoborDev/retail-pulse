@@ -7,6 +7,18 @@ import OrdersList from "./OrdersList";
 
 const OrdersTable = ({ onOrderClick }) => {
   const [activeTab, setActiveTab] = useState("All Orders");
+
+  // Filter logic based on activeTab
+  const filteredOrders = orders.filter((order) => {
+    if (activeTab === "All Orders") return true; // Show all
+    if (activeTab === "Fulfilled") return order.paymentStatus === "Paid";
+    if (activeTab === "Unpaid") return order.paymentStatus === "Unpaid";
+    if (activeTab === "Cancelled") return order.orderStatus === "Cancelled";
+    return true; // Default to show all
+  });
+
+  console.log("Filtered Orders:", filteredOrders); // Debugging log
+
   const tabs = ["All Orders", "Fulfilled", "Unpaid", "Cancelled"];
 
   return (
@@ -34,7 +46,7 @@ const OrdersTable = ({ onOrderClick }) => {
       <table className={styles.table}>
         <thead>
           <tr>
-            <th>
+            <th className={styles.hash}>
               <input type="checkbox" />
             </th>
             <th>Order</th>
@@ -45,11 +57,11 @@ const OrdersTable = ({ onOrderClick }) => {
             <th>Order Status</th>
             <th>Total</th>
             <th>Delivery Date</th>
-            <th></th>
+            <th className={styles.amountBd}></th>
           </tr>
         </thead>
         <tbody>
-          <OrdersList orders={orders} onOrderClick={onOrderClick} />
+          <OrdersList orders={filteredOrders} onOrderClick={onOrderClick} />
         </tbody>
       </table>
     </div>

@@ -17,6 +17,10 @@
   margin-bottom: 15px;
 }
 
+.header h3 {
+  font-size: 1.6rem;
+}
+
 .filters {
   display: flex;
   gap: 1rem;
@@ -60,10 +64,6 @@
 .hash{
   border-top-left-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
-}
-
-.tableRow{
-  border-radius: 1.2rem;
 }
 
 .table th, .table td {

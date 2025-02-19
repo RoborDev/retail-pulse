@@ -1,26 +1,36 @@
 .salesCardContainer {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 1.2rem;
-  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  margin: .4rem; /* Remove extra margins */
+  margin-top: .2rem;
+  /* border: 2px solid #f4f4f4; */
+  font-family: 'Schibsted Grotesk', Arial, sans-serif;
+  width: 100%; /* Ensure it takes full width */
+  box-sizing: border-box; /* Ensure padding doesn’t shrink content */
 }
 
+
+
 .salesCard {
-  padding: 0.7rem;
+  flex: 1; /* Allow cards to expand */
+  min-width: calc(33.333% - 1.2rem); /* 3 cards per row, adjust gap */
+  max-width: calc(33.333% - 1rem); /* Keep cards touching edges */
+  padding: 1rem;
   border-radius: 15px;
   background: white;
   display: flex;
   flex-direction: column;
   font-family: 'Schibsted Grotesk', Arial, sans-serif;
   justify-content: space-between;
-  flex-grow: 1; /* Allows cards to expand */
-  min-width:15rem;
-  max-width: 100%; /* Prevents overflow */
   gap: 2.5rem;
   position: relative;
   overflow: hidden;
   border: 1.5px solid #e5e7eb;
+  box-sizing: border-box; /* Prevent unwanted overflow */
 }
 
 /* Header Section */

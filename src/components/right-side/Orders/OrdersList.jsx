@@ -13,7 +13,7 @@ const OrdersList = ({ orders, onOrderClick }) => {
           <td>
             <input type="checkbox" />
           </td>
-          <td>{order.id}</td>
+          <td className={styles.tableData}>{order.id}</td>
           <td>{order.items}</td>
           <td>
             <span className={`${styles.statusBadge} ${order.paymentClass}`}>
@@ -32,7 +32,7 @@ const OrdersList = ({ orders, onOrderClick }) => {
           <td>⋮</td>
         </tr>
       ))}
-      <span className={styles.navigate}>Page 1 of 12 </span>
+      {/* <span className={styles.navigate}>Page 1 of 12 </span> */}
     </>
   );
 };

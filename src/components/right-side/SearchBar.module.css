@@ -1,10 +1,9 @@
 .searchBar{
   padding: 1rem 1.6rem;
-  width: 45.5rem;
-  max-width: 65.5rem;
-  border-radius: 1.2rem;
+  display: flex;
+   border-radius: 1.2rem;
   border: 1.5px solid #f4f4f4;
-  padding-left: 4rem; 
+  padding-left: 4rem;
   font-size: 1.5rem;
 }
 
@@ -14,8 +13,35 @@
   left: 1rem;
   width: 20px;
   height: 20px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
+
+/* Left Section Styling */
+.leftSection {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  flex-direction: column;
+  line-height: 23.87px;
+  gap: 0.4rem;
+  width: 300px;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.navbarIcon {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
 
 /* Navbar Styling */
 .navbar {
@@ -28,63 +54,68 @@
   height: 70px;
   width: 100%;
   border-top-left-radius: 2.8rem;
-  box-sizing: border-box; 
-  overflow: hidden; /* Prevent content overflow */
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
-/* Left Section Styling */
-.leftSection {
-  display: flex;
-  position: relative;
-  width: fit-content;
-  flex-direction: column;
-  line-height: 23.87px;
-  gap: .4rem;
-  width: 300px;
-}
 
-.rightSection{
+/* Right Section */
+.rightSection {
   display: flex;
   flex-direction: row;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space out elements */
+  width: 100%;
 }
 
-.iconContainer{
+/* Icons */
+.iconContainer {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   text-align: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.name{
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #000;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.notificationIcon{
+.notificationIcon {
   border: 1.5px solid #f4f4f4;
   border-radius: 50%;
   height: 4rem;
   width: 4rem;
-  position: relative;
-}
-
-.navbarIcon{
   display: flex;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: .5rem;
-}
+  align-items: center;
+  justify-content: center;
+} 
 
-.name{
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #000;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: .7rem;
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items in mobile view */
+    padding: 1rem;
+  }
+
+  .searchBar {
+    width: 100%; /* Full width on small screens */
+    max-width: none;
+  }
+
+  .leftSection {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+
+  .rightSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -121,6 +121,54 @@ const orders = [
     total: "$840",
     deliveryDate: "Jul 15, 2023",
   },
+  {
+    id: "#8231",
+    items: "2 Items",
+    paymentStatus: "Paid",
+    paymentClass: styles.paid, // Grey
+    customer: "Robor Esiolee",
+    date: "Jul 8, 2023",
+    orderStatus: "Delivered",
+    orderClass: styles.delivered, // Beige
+    total: "$840",
+    deliveryDate: "Jul 15, 2023",
+  },
+  {
+    id: "#8231",
+    items: "2 Items",
+    paymentStatus: "Paid",
+    paymentClass: styles.paid, // Grey
+    customer: "Robor Esiolee",
+    date: "Jul 8, 2023",
+    orderStatus: "Delivered",
+    orderClass: styles.delivered, // Beige
+    total: "$840",
+    deliveryDate: "Jul 15, 2023",
+  },
+  {
+    id: "#8231",
+    items: "2 Items",
+    paymentStatus: "Paid",
+    paymentClass: styles.paid, // Grey
+    customer: "Robor Esiolee",
+    date: "Jul 8, 2023",
+    orderStatus: "Delivered",
+    orderClass: styles.delivered, // Beige
+    total: "$840",
+    deliveryDate: "Jul 15, 2023",
+  },
+  {
+    id: "#8231",
+    items: "2 Items",
+    paymentStatus: "Paid",
+    paymentClass: styles.paid, // Grey
+    customer: "Robor Esiolee",
+    date: "Jul 8, 2023",
+    orderStatus: "Delivered",
+    orderClass: styles.delivered, // Beige
+    total: "$840",
+    deliveryDate: "Jul 15, 2023",
+  },
 ];
 
 export default orders;

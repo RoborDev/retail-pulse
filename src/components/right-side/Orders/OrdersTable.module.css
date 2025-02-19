@@ -8,6 +8,13 @@
   margin-top: 1rem;
   margin-right: 1rem;
   transition: color 0.3s ease;
+  position: relative;
+  overflow: auto; 
+  max-height: 100vh; 
+
+  /* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
 }
 
 .headerTabs {
@@ -15,8 +22,12 @@
   align-items: center;
   gap: 2rem;
   font-size: 1.6rem;
-  padding: 1.5rem ;
+  padding: 1.5rem;
   border: 1.5px solid #f4f4f4;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
 }
 
 .headerTabs span {
@@ -29,11 +40,11 @@
   color: #07A1FF;
   font-weight: 500;
   padding-bottom: 5px;
-  font-size: 1.4rem;  
+  font-size: 1.4rem;
   position: relative;
 }
 
-.active::after{
+.active::after {
   content: "";
   position: absolute;
   bottom: -2rem;
@@ -57,6 +68,11 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+  position: relative;
+}
+
+.table tr{
+  padding: .5rem;
 }
 
 th, td {
@@ -69,12 +85,41 @@ th, td {
 }
 
 th {
-  background:#F7F8FA;
+  background: #F7F8FA;
   font-size: 1.4rem;
   font-weight: 400;
   color: #727988;
+  position: sticky;
+  top: 5.5rem; 
+  z-index: 500;
 }
 
-td {
-  font-size: 1.4rem;
+.amountBd{
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
+
+.hash{
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+
+/* Fix the thead right below the tabs */
+.table thead {
+  position: sticky;
+  top: 6.5rem; /* Adjust based on headerTabs height */
+  background: #F7F8FA;
+  z-index: 500;
+}
+
+/* Reduce padding of the table head */
+.table thead th {
+  padding: 1rem 0.5rem;
+  text-align: left;
+  border-bottom: 1.5px solid #e0e0e0;
+  font-weight: 500;
+  color: #434750;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #727988;
 }

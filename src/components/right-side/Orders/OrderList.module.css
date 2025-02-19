@@ -1,25 +1,66 @@
-.statusBadge {
+ .statusBadge {
   padding: 5px 1rem;
-  border-radius: .6rem;
-  font-size: 12px;
+  border-radius: 0.6rem;
+  font-size: 1.2rem; 
   color: #434750;
   border: 1px solid #F6D6E1;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .navigate {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; 
-  margin-top: 20px;
+  width: 100%;
   font-size: 1.6rem;
-  font-weight: 500; 
+  font-weight: 500;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .orderRow {
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out; 
 }
 
 .orderRow:hover {
   background-color: #f5f5f5;
+}
+
+tr td{
+  font-size: 1.6rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .statusBadge {
+    font-size: 1rem; /* Reduce font size on smaller screens */
+    padding: 4px 0.8rem;
+  }
+
+  .navigate {
+    font-size: 1.4rem; /* Adjust font size */
+    margin-top: 1.5rem;
+  }
+
+  .orderRow {
+    font-size: 1.4rem; /* Make table content readable on small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .statusBadge {
+    font-size: 0.9rem;
+    padding: 3px 0.6rem;
+  }
+
+  .navigate {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .orderRow {
+    font-size: 1.2rem;
+  }
 }
